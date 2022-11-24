@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "dist/": true,
+    "tmp/": true
+  },
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": [
+    "--fast"
+  ],
+}

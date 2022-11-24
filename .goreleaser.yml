@@ -1,0 +1,25 @@
+before:
+  hooks:
+    - go mod tidy
+builds:
+  - env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+    ldflags:
+      - -s -w -X github.com/jclem/cobble/cmd.Version={{ .Version }} -X github.com/jclem/cobble/cmd.Commit={{ .Commit }} -X github.com/jclem/cobble/cmd.BuiltAt={{ .Date }}
+brews:
+  - tap:
+      owner: jclem
+      name: homebrew-tap
+    folder: Formula
+    homepage: https://github.com/jclem/cobble
+    license: MIT
+    test: system "#{bin}/cobble --version"
+archives:
+  - replacements:
+      darwin: macOS
+      linux: Linux
+      386: 32-bit
+      amd64: 64-bit
