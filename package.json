@@ -1,42 +1,5 @@
 {
   "name": "@jclem/cobble",
-  "description": "A CLI for setting up scaffolding for projects",
   "version": "0.0.8",
-  "author": "Jonathan Clem <j@jclem.me>",
-  "bin": {
-    "cobble": "./bin/cobble"
-  },
-  "bugs": {
-    "url": "https://github.com/jclem/cobble/issues"
-  },
-  "directories": {
-    "example": "examples"
-  },
-  "files": [
-    "dist",
-    "tasks.cjs",
-    "LICENSE.md",
-    "README.md"
-  ],
-  "goBinary": {
-    "name": "cobble",
-    "path": "./bin"
-  },
-  "homepage": "https://github.com/jclem/cobble#readme",
-  "keywords": [
-    "process",
-    "task"
-  ],
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jclem/cobble.git"
-  },
-  "scripts": {
-    "preinstall": "node tasks.cjs install",
-    "preuninstall": "node tasks.cjs uninstall"
-  }
+  "private": true
 }
