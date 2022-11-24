@@ -1,7 +1,7 @@
 {
   "name": "@jclem/cobble",
   "description": "A CLI for setting up scaffolding for projects",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "Jonathan Clem <j@jclem.me>",
   "bin": {
     "cobble": "./bin/cobble"
